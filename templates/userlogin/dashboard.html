@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../static/css/userstyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="hamburger-menu" onclick="toggleSidebar()">
+        ☰
+    </div>
+    <div class="sidebar" id="sidebar">
+        <h2>Agent Login</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="newparcel.html">New Parcel</a></li>
+            <li><a href="../userlogin/myparcel.html">My Parcel</a></li>
+            <li><a href="track.html">Track Parcel</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Dashboard</h1>
+        <p>Select a year to view order data:</p>
+        <input type="date" id="yearPicker" onchange="updateCharts()">
+        <div class="chart-container">
+            <canvas id="ordersChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="statusChart"></canvas>
+        </div>
+        <h2>Orders for Selected Date:</h2>
+        <table id="ordersTable">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Order Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Orders will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="../static/js/userscripts.js"></script>
+</body>
+</html>

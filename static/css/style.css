@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: rgb(28, 26, 26);
+    text-decoration: none;
+    padding: 14px 20px;
+    position: relative;
+}
+
+.nav-links a::before,
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(31, 28, 28);
+    transition: width 0.3s;
+}
+
+.nav-links a::before {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links a::after {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::before,
+.nav-links a:hover::after {
+    width: 100%;
+}
+button{
+    background-color: #f7faf7;
+    border: none;
+    color:rgb(8, 8, 8);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:16px;
+    margin:4px 2px;
+    cursor:pointer;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: #45a049;
+}
+.btn{
+    background-color: #4CAF50;
+    border: none;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:16px;
+    margin:4px 2px;
+    cursor:pointer;
+    border-radius: 8px;
+}
+.btn-signup{
+    background-color: #e7e2df;
+    color:black;
+}
+.btn-signup:hover{
+    background-color: #45a049;
+}
+.btn-signin{
+    background-color: #e7e2df;
+    color:black;
+}
+.btn-signin:hover{
+    background-color: #45a049;
+}
+.welcome-message {
+    background-image: url('../Img/wel.png');
+    
+    background-size: cover; 
+    background-position: center; 
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    padding: 100px 20px;
+   
+}
+
+.about{
+    padding: 20px;
+    text-align: center;
+}
+
+.services{
+    padding: 20px;
+    text-align: center;
+    background-color: #bab9b9;
+}
+
+.team {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-cards, .team-members {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.service-card, .team-member {
+    text-align: center;
+    margin: 10px;
+}
+
+.service-card img, .team-member img {
+    width: 150px;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

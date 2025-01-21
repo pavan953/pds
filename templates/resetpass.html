@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="resetSection">
+            <h2>Reset Password</h2>
+            <form id="resetForm">
+                <div class="form-group">
+                    <label for="resetEmail">Email:</label>
+                    <input type="email" id="resetEmail" name="email" required>
+                </div>
+                <button type="submit">Send Password Reset Email</button>
+                <p id="resetMessage"></p>
+            </form>
+            <p>Remember your password? <a href="{{url_for('signin')}}" id="showSigninFromReset">Sign In</a></p>
+        </div>
+    </div>
+    <script src="../static/js/scripts.js"></script>
+</body>
+</html>

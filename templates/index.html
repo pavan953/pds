@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Home Page</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+            <a class="btn btn-signup"  href="{{ url_for('signup') }}">Signup</a>
+            <a class="btn btn-signin"  href="{{ url_for('signin') }}">Login</a>   
+            </div>
+        </nav>
+    </header>
+
+    <section class="welcome-message" id="home">
+            <h1>WELCOME</h1>
+            <p>Transform your logistics with our advanced parcel and courier management system, offering real-<br>time updates and precise delivery estimates. Monitor parcels and couriers with seamless real-time<br> tracking, ensuring transparency and efficiency. Our system provides accurate delivery time predictions,<br> eliminating vague windows and enhancing customer satisfaction. Featuring a user-friendly interface<br>, it simplifies management tasks and includes comprehensive reporting for operational insights. <br>Customizable alerts keep you updated on key events, while a self-service portal allows customers to<br> track parcels and adjust preferences. Easily integrating with existing systems, our solution boosts <br>efficiency and reliability. Experience superior logistics management—contact us for a demo today!</p>
+            <a class="btn btn-signup"  href="{{ url_for('signup') }}">Get Started</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me.</h2>
+        <p>
+            Our mission is to redefine the standards of parcel and courier services by integrating<br>
+            advanced technology, real-time updates, and accurate delivery estimates. We strive to<br>
+            create a platform that not only meets but exceeds the expectations of our users, providing<br>
+            transparency, reliability, and convenience at every step of the delivery process.<br>
+            At our core, our mission is to revolutionize the parcel and courier service industry<br>
+            by harnessing the power of advanced technology and innovative solutions.
+        </p>
+        <p>
+            We aim to set a new benchmark in delivery services by integrating sophisticated tracking systems,<br>
+            real-time updates, and highly accurate delivery estimates into our platform. Our vision is to<br>
+            transform the traditional delivery experience into one that is not only efficient but also highly user-centric.<br>
+            We are committed to creating a platform that exceeds conventional standards and meets the evolving<br>
+            expectations of our users. By prioritizing transparency, we ensure that every step of the delivery process<br>
+            is visible and understandable, allowing users to stay informed and in control. Reliability is at the heart of our<br>
+            service, as we strive to deliver parcels on time, every time, without compromise.
+        </p>
+            
+            
+    </section>
+
+    <section class="services" id="services">
+        <h2>Services</h2>
+        <p>we offer a comprehensive suite of services designed to meet all your parcel and courier needs with 
+        <br>unparalleled efficiency and reliability. Our innovative platform ensures seamless management, 
+        <br>real-time tracking, and accurate delivery estimates, making us your go-to solution for all delivery requirements.</p>
+        <p> Our parcel and courier management system offers seamless tracking, real-time updates, and precise <br>
+            delivery estimates. Enjoy a user-friendly interface, customizable alerts, and comprehensive reporting<br>
+             to optimize your operations. Enhance customer satisfaction with our self-service portal for easy tracking and delivery<br> 
+             management. Revolutionize your logistics with our innovative solution.</p>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="../static/img/service2.jpg" alt="Service 1">
+                <p>Order on site</p>
+            </div>
+            <div class="service-card">
+                <img src="../static/img/dataprivacy.jpg" alt="Service 2">
+                <p>Data Security</p>
+            </div>
+            <div class="service-card">
+                <img src="../static/img/tracking.jpg" alt="Service 3">
+                <p>Tracking</p>
+            </div>
+            <div class="service-card">
+                <img src="../static/img/service4.jpg" alt="Service 4">
+                <p>Service Name</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="team" id="team">
+        <h2>Team</h2>
+        <p>Dedication. Expertise. Passion.</p>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="../static/img/sai.jpg" alt="Team Member 1">
+                <h3>Sai Kiran</h3>
+                <p>Product Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="../static/img/shalini.jpg" alt="Team Member 2">
+                <h3>Shalini</h3>
+                <p>Product Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="../static/img/B.J.Prathiksha.jpg" alt="Team Member 2">
+                <h3>B.J>Prathiksha</h3>
+                <p>Product Manager</p>
+            </div>
+        </div>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="../static/img/chotu.jpg" alt="Team Member 1">
+                <h3>Naga Sai</h3>
+                <p>Product Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="../static/img/somya.jpg" alt="Team Member 2">
+                <h3>G Somya Lakshmi</h3>
+                <p>Product Designer</p>
+            </div>
+        </div>   
+    </section> -->
+
+    <footer>
+        <div class="contact-info">
+            <p>Call: 866-029-9262<br>
+            Email: info@mysite.com</p>
+            <p>Follow: 
+                <img src="../static/img/team2.jpg">
+                <img src="../static/img/team2.jpg">
+                <img src="../static/img/team2.jpg">                 
+
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

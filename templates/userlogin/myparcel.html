@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Parcel</title>
+    <link rel="stylesheet" href="../static/css/userstyles.css">
+</head>
+<body>
+    <div class="hamburger-menu" onclick="toggleSidebar()">
+        ☰
+    </div>
+    <div class="sidebar" id="sidebar">
+        <h2>Agent Login</h2>
+        <ul>
+            <li><a href="../userlogin/dashboard.html">Dashboard</a></li>
+            <li><a href="newparcel.html">New Parcel</a></li>
+            <li><a href="myparcel.html">My Parcel</a></li>
+            <li><a href="track.html">Track Parcel</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>My Parcel</h1>
+        <p>View and manage your parcels here:</p>
+        <!-- Example table of parcels -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Parcel ID</th>
+                    <th>Name</th>
+                    <th>Destination</th>
+                    <th>Weight</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="showDetails('1', 'Parcel A', 'Location A', '5.5 kg')">
+                    <td>1</td>
+                    <td>Parcel A</td>
+                    <td>Location A</td>
+                    <td>5.5 kg</td>
+                </tr>
+                <tr onclick="showDetails('2', 'Parcel B', 'Location B', '3.2 kg')">
+                    <td>2</td>
+                    <td>Parcel B</td>
+                    <td>Location B</td>
+                    <td>3.2 kg</td>
+                </tr>
+                <tr onclick="showDetails('3', 'Parcel C', 'Location C', '2.7 kg')">
+                    <td>3</td>
+                    <td>Parcel C</td>
+                    <td>Location C</td>
+                    <td>2.7 kg</td>
+                </tr>
+                <tr onclick="showDetails('4', 'Parcel D', 'Location D', '8.4 kg')">
+                    <td>4</td>
+                    <td>Parcel D</td>
+                    <td>Location D</td>
+                    <td>8.4 kg</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div id="parcelModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Parcel Details</h2>
+            <p><strong>Parcel ID:</strong> <span id="modalParcelId"></span></p>
+            <p><strong>Name:</strong> <span id="modalParcelName"></span></p>
+            <p><strong>Destination:</strong> <span id="modalParcelDestination"></span></p>
+            <p><strong>Weight:</strong> <span id="modalParcelWeight"></span></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
